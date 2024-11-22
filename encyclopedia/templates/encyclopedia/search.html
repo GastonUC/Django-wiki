@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+{% block title %}
+    Search results
+{% endblock %}
+{% block body %}
+    <h3>Here goes the look a like results</h3>
+    <ul>
+        {% for entry in entries %}
+        <li>{{ entry }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
