@@ -1,5 +1,9 @@
 {% extends "encyclopedia/layout.html" %}
-{% block title %} Not found {%  %}
+{% block title %} Not found {% endblock %}
 {% block body %}
-    Sorry but this page has not been created yet, do you wish to create <a href="{% url 'wiki:new' %}">{{ title }}</a>?
+    {% if not message %}
+        Sorry but this page has not been created yet, do you wish to create <a href="{% url 'wiki:new' %}">{{ title }}</a>?
+    {% else %}
+        {{ message }}
+    {% endif %}
 {% endblock %}

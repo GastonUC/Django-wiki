@@ -15,7 +15,7 @@
                 <form action="{% url 'wiki:search' %}" method="post">
                     {% csrf_token %}
                     <!-- <input class="search" type="text" name="q" placeholder="Search Encyclopedia"> -->
-                    {{ form }}
+                    {{ search }}
                 </form>
                 <div>
                     <a href="{% url 'wiki:index' %}">Home</a>
@@ -24,7 +24,6 @@
                     <a href="{% url 'wiki:new' %}">Create New Page</a>
                 </div>
                 <div>
-                    <a href="{% url 'wiki:random' title=random %}">Random Page</a>
                 </div>
                 {% block nav %}
                 {% endblock %}
