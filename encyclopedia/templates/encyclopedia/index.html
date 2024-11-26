@@ -5,12 +5,16 @@
 {% endblock %}
 
 {% block body %}
-    <h1>All Pages</h1>
+    <div class="text-center">
+        <h1>All Pages</h1>
+    </div>
 
-    <ul>
-        {% for entry in entries %}
-            <li><a href="{% url 'wiki:title' title=entry %}">{{ entry }}</li>
-        {% endfor %}
-    </ul>
+    <div class="pt-3">
+        <ul class="list">
+            {% for entry in entries %}
+                <li class="list-item"><a href="{% url 'wiki:title' title=entry %}">{{ entry }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
 
 {% endblock %}

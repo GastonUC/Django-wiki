@@ -3,15 +3,19 @@
     Creation page
 {% endblock %}
 {% block body %}
-<h1>Create a new entry for the Wiki!</h1>
-<form action="" method="post">
+<h2 class="pt-2 pb-2">Create a new entry for the Wiki!</h2>
+<form action="{% url 'wiki:new' %}" method="post">
     {% csrf_token %}
-    <h3>Title</h3>
-    {{ form.title }}
-</br>
-    <h3>Content</h3>
-    {{ form.content }}
-</br>
-    <input type="submit">
+    <div class="form-floating mb-2">
+        <!-- <h3>Title</h3> -->
+        {{ form.title }}
+        <label for="title_form">Title</label>
+    </div>
+    <div class="form-floating mb-2">
+        <!-- <h3>Content</h3> -->
+        {{ form.content }}
+        <label for="content_form">Content</label>
+    </div>
+    <input type="submit" class="btn btn-primary" value="Create entry">
 </form>
 {% endblock %}

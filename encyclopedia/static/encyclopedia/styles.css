@@ -12,14 +12,13 @@ h1 {
     padding-top: 20px;
 }
 
-textarea {
-    height: 60vh;
-    width: 80%;
+textarea#content_form {
+    height: 70vh;
+    width: 90%;
 }
 
-textarea.title {
-    height: 10vh;
-    width: 80%;
+input#title_form {
+    width: 90%;
 }
 
 .main {
@@ -40,4 +39,30 @@ textarea.title {
 
 .sidebar h2 {
     margin-top: 5px;
+}
+
+div.pt-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    padding-left: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.list-item {
+    width: 50%;
+    text-align: center;
+}
+
+.list-item a {
+    text-decoration: none;
 }
