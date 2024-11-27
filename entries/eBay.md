@@ -1,0 +1,2 @@
+#eBay
+eBay Inc. is an American multinational e-commerce company based in San Jose, California, that allows users to buy or view items via retail sales through online marketplaces and websites in 190 markets worldwide. Sales occur either via online auctions or "buy it now" instant sales, and the company charges commissions to sellers upon sales.
