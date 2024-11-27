@@ -1,3 +1,2 @@
 # Rust
-
-some new language
+some language

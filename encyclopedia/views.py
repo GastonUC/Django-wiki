@@ -115,7 +115,7 @@ def edit(request, name):
                 })
             
             util.save_entry(cleaned_title, cleaned_content)
-            messages.add_message(request, messages.SUCCESS, "Entry changed.")
+            messages.add_message(request, messages.SUCCESS, "Entry modified.")
             return redirect("wiki:title", cleaned_title)
 
     content = util.get_entry(name)
